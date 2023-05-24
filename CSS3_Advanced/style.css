@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background: aqua;
+    background-image:linear-gradient(to bottom, rgb(169, 169, 169, 0.5), rgb(139, 0, 0,0.5)) ,url("https://static.vecteezy.com/system/resources/previews/000/677/302/original/abstract-technology-banner-background.jpg");
+    background-size: cover;
+    height:100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height:100px;
+}
+
+ul{
+    
+    list-style: none;
+    display: flex;
+    
+}
+
+ul li{
+    padding: 30px;
+    
+}
+
+ul a{
+    color:white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    transition: all 1s ;
+    transition-timing-function: linear;
+    transition-duration: 500ms;
+
+}
+
+header img{
+    border-radius:30px;
+    width:60px;
+    
+}
+
+a:hover{
+   
+    font-size: 1.7em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid-container{
+    margin-top:-150px;
+    display:grid;
+    justify-content: center;
+   grid-template: repeat(8, 200px) / repeat(8, 1fr);
+    
+    gap:20px;
+    
+}
+
+
+
+.grid9{
+    grid-area: 2/1/span 3/span 4;
+    background-image: url("https://cdn.britannica.com/77/191677-050-3CBF2834/Capybara.jpg");
+    background-size: cover;
+}
+
+.grid10{
+    grid-area: 2/5/span 5/span 4;
+    background-image: url("https://people.com/thmb/ovi1vkp7e_cTTPC5LglB_Ii83n0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(149x0:151x2)/capybara-1-300-dbd2c51946de4b989723201dac1f20ff.jpg");
+    background-size: cover;
+}
+
+.grid11{
+    grid-area: span 2/1/span 2/span 2;
+    background-image:url("https://www.awsfzoo.com/media/capy-encounter.jpg");
+    background-size: cover;
+}
+
+.grid12{
+    grid-area: span 2/3/span 2/span 2;
+    background-image:url("https://gray-woio-prod.cdn.arcpublishing.com/resizer/iJG73NY0hlUCqbLsAyULeR2B1_s=/800x1200/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/gray/NZTK7M46EZBQBPKGMWG3O4CJJE.png");
+    background-size: cover;
+}
+
+.grid13{
+    grid-area: span 2/ span 4;
+    background-image: url("https://happyhollow.org/wp-content/uploads/2022/10/2.png");
+    background-size: cover;
+}
+
+.grid14{
+    background-image: url("https://fox40.com/wp-content/uploads/sites/13/2023/02/Capybara_zoo_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: span 2/span 4;
+    background-position-y: -30px;
+    
+}
